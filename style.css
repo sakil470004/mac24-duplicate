@@ -55,13 +55,16 @@ a {
  *  Cover
  **********************************************************************/
 
+ .title-color{
+     color: black;
+     font-size: 4rem;
+ }
 .flex-wraper {
    
     /* align-items: center;
      justify-content: center;
      */
 }
-
 
 .container {
     /*show heigh: auto*/
