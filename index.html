@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>macbook 14</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <nav class="zone blue">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="flex-wraper">
+    <div class="container zone"><img class="macbook-img" src="./img/mac.png"></div>
+    <div class="zone  grid-wrapper custom-scroll">
+      <div class="box zone">
+        <h4 class="text-center ">Customize your Blue 24-inch iMac with Apple M1 chip.</h4>
+        <p class="text-center ">The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central processing unit and
+          graphics processing unit for its Macintosh computers and iPad Pro tablets. It was inspired by their Apple A14
+          Bionic chip.</p>
+      </div>
+      <!-- memory -->
+      <div class="box zone">
+        <h5>Memory</h5>
+        <p>
+          <b class="catagory-type" onclick="setExtraCost(0,'extra-memory-cost')">8GB unified memory</b>
+          <b class="catagory-type" onclick="setExtraCost(180,'extra-memory-cost')">16GB unified memory</b>
+        </p>
+
+      </div>
+      <!-- storage -->
+      <div class="box zone">
+        <h5>Storage
+        </h5>
+        <p>
+          <b onclick=" setExtraCost(0, 'extra-storage-cost')" class="catagory-type">256GB SSD storage</b>
+          <b onclick=" setExtraCost(100, 'extra-storage-cost')" class="catagory-type">512GB SSD storage</b>
+          <b onclick=" setExtraCost(180, 'extra-storage-cost')" class="catagory-type">1TB SSD storage</b>
+        </p>
+
+
+      </div>
+      <!-- delivery option -->
+      <div class="box zone">
+        <h5>Choose your delivery option</h5>
+        <p>
+          <b onclick="setExtraCost(0, 'delivery-charge')" class="catagory-type">Friday, Aug 25 Free Prime Delivery</b>
+          <b onclick="setExtraCost(20, 'delivery-charge')" class="catagory-type">Friday, Aug 21
+            Delivery charge $20</b>
+        </p>
+
+      </div>
+      <!-- Best Price -->
+      <div class="box zone">
+        <div class="push-right-wraper">
+          <h5>Best Price</h5>
+          <h5 class="push">$<span id="best-price">1299</span> </h5>
+        </div>
+        <hr>
+        <div class="push-right-wraper">
+          <h5>Extra Memory Cost</h5>
+          <h5 class="push">$<span id="extra-memory-cost">0</span></h5>
+        </div>
+        <hr>
+        <div class="push-right-wraper">
+          <h5>Extra storage Cost</h5>
+          <h5 class="push">$<span id="extra-storage-cost">0</span></h5>
+        </div>
+
+        <hr>
+        <div class="push-right-wraper">
+          <h5>Delivery Charge</h5>
+          <h5 class="push">$<span id="delivery-charge">0</span></h5>
+        </div>
+
+        <hr class="extra-hight-in-horisontal-line">
+        <div class="push-right-wraper">
+          <h5>Total Price</h5>
+          <h5 class="push">$<span id="total-price">1299</span> </h5>
+        </div>
+
+
+      </div>
+      <div class="box zone">
+        <h5>Add Promo code</h5>
+        <div>
+          <input id="promo-input" class="promocode-input" placeholder="Enter your token no.">
+          <button class="btn-apply" onclick="checkPromo()">Apply</button>
+        </div>
+      </div>
+      <div>
+
+        <hr>
+
+        <h5 class="text-center color-danger">Total :$
+          <span id="total-after-promo">1299</span>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <footer class="zone blue">made by Sakil</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
